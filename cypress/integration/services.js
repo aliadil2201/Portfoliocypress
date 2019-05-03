@@ -1,6 +1,6 @@
 describe('The Services Page', function () {
     it('successfully loads', function () {
-        cy.visit('http://127.0.0.1:8000/services/');
+        cy.visit('http://localhost:8000/services');
         cy.get('.services-area > .container > .d-flex > .menu-content > .title > .mb-10').contains('My');
         cy.get('.services-area > .container > .d-flex > .menu-content > .title > p').contains('At about');
         cy.get(':nth-child(1) > .single-services > a > h4').contains('Web');
@@ -54,7 +54,7 @@ describe('The Services Page', function () {
         cy.get(':nth-child(4) > .single-testimonial > .desc > :nth-child(1)').contains('Do you want to be');
         cy.get(':nth-child(4) > .single-testimonial > .desc > h4').contains('Maxwell');
         cy.get(':nth-child(4) > .single-testimonial > .desc > :nth-child(3)').contains('Google');
-        cy.get('.cloned.active > .single-testimonial > .desc > :nth-child(1)').contains('A purpose is the');
+        cy.get(':nth-child(3) > .single-testimonial > .desc > :nth-child(1)').contains('A purpose is the');
         cy.get(':nth-child(3) > .single-testimonial > .desc > h4').contains('Craig');
         cy.get(':nth-child(3) > .single-testimonial > .desc > :nth-child(3)').contains('Facebook');
         cy.get(':nth-child(1) > .single-footer-widget > h4').contains('About');

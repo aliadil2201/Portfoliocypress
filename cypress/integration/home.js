@@ -63,7 +63,7 @@ describe('The Home Page', function () {
         cy.get(':nth-child(4) > .single-testimonial > .desc > :nth-child(1)').contains('Do you want to be');
         cy.get(':nth-child(4) > .single-testimonial > .desc > h4').contains('Maxwell');
         cy.get(':nth-child(4) > .single-testimonial > .desc > :nth-child(3)').contains('Google');
-        cy.get('.cloned.active > .single-testimonial > .desc > :nth-child(1)').contains('A purpose is the');
+        cy.get(':nth-child(3) > .single-testimonial > .desc > :nth-child(1)').contains('A purpose is the');
         cy.get(':nth-child(3) > .single-testimonial > .desc > h4').contains('Craig');
         cy.get(':nth-child(3) > .single-testimonial > .desc > :nth-child(3)').contains('Facebook');
         cy.get('.price-area > .container > .d-flex > .menu-content > .title > .mb-10').contains('Your Plan');

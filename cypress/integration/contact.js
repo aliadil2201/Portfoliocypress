@@ -1,6 +1,6 @@
 describe('The Contact Page', function () {
     it('successfully loads', function () {
-        cy.visit('http://127.0.0.1:8000/contact/');
+        cy.visit('http://localhost:8000/contact');
         cy.get('.nav-menu > :nth-child(1) > a').contains('Home');
         cy.get('.nav-menu > :nth-child(2) > a').contains('About');
         cy.get('.nav-menu > :nth-child(3) > a').contains('Services');

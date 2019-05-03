@@ -1,6 +1,6 @@
 describe('The Portfolio Page', function () {
     it('successfully loads', function () {
-        cy.visit('http://127.0.0.1:8000/portfolio/');
+        cy.visit('http://localhost:8000/portfolio');
         cy.get('#portfolio > .container > .justify-content-center > .menu-content > .title > .mb-10').contains('Our');
         cy.get('#portfolio > .container > .justify-content-center > .menu-content > .title > p').contains('Who are in');
         cy.get('ul > .active').contains('All');

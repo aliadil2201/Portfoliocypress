@@ -1,6 +1,6 @@
 describe('The Pricing Page', function () {
     it('successfully loads', function () {
-        cy.visit('http://127.0.0.1:8000/price/');
+        cy.visit('http://localhost:8000/price');
         cy.get('.price-area > .container > .d-flex > .menu-content > .title > .mb-10').contains('Your Plan');
         cy.get('.price-area > .container > .d-flex > .menu-content > .title > p').contains('When someone');
         cy.get(':nth-child(1) > .top-part > h4').contains('Economy');
