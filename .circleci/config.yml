@@ -2,11 +2,23 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.4
+      - image: nikolaik/python-nodejs
 
     steps:
-      - checkout  # checkout source code to working directory
+      - checkout
       - run:
-          command: sudo pip install -r requirements.txt
+          command: pip install -r requirement.txt
       - run:
           command: coverage run manage.py test
+
+          
+
+#      - run:
+#          command: npm install
+#      - run:
+#          command: python manage.py makemigrations && python manage.py migrate
+#      - run:
+#          command: python manage.py runserver 8000
+#          background: true
+#      - run:
+#          command: node_modules/.bin/cypress open
