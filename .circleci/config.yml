@@ -20,4 +20,4 @@ jobs:
           command: python manage.py runserver 8000
           background: true
       - run:
-          command: node_modules/.bin/cypress run
+          command: ./node_modules/.bin/cypress run
